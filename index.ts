@@ -9,8 +9,9 @@ let game: Carcassone = new Carcassone();
 game.play();
 
 
-let tile1: Tile = StackBuilder.getTopCityTileWithRoadCrossing();
-let tile2: Tile = new TileHelper().rotateTile(StackBuilder.getDoorCityTileWithRoad());
+let tile1: Tile = StackBuilder.getDoorCityTile();
+let tile2: Tile = StackBuilder.getHalfCityFarmTileWithRoad();
+/* let tile2: Tile = StackBuilder.getHalfCityFarmTileWithRoad(); */
 
 console.log(new TileHelper().connectionIsPosible(tile1,tile2,PieceNode.UP));
 console.log(new TileHelper().connectionIsPosible(tile1,tile2,PieceNode.DOWN));
